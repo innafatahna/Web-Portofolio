@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CITRUS</title>
+    <link rel="stylesheet" href="{{ url_for('style.css') }}" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href=''>CITRUS</a></div>
+        <sub
+              style="
+                color: #ffa451;
+                font-size: 20px;
+                font-family: comic sans ms;
+              "
+              >jeruk kinkan</sub
+            >
+        <div class="menu">
+          <ul>
+            <li><a href="#informasi">Informasi</a></li>
+            <li><a href="#aplikasi">Aplikasi</a></li>
+            <li><a href="#camera">Camera</a></li>
+            <li><a href="#anggota">Anggota Kelompok</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <!-- untuk home -->
+      <section id="informasi">
+        <div class="kolom">
+          <h2>
+            Orange Counting and Inspection Quality
+            <sub
+              style="
+                color: #ffa451;
+                font-size: 20px;
+                font-family: comic sans ms;
+              "
+              >special fruit</sub
+            >
+          </h2>
+          <p>
+            Aplikasi penghitung buah jeruk jenis kinkan pada pohonnya adalah
+            sebuah solusi inovatif yang memanfaatkan teknologi untuk
+            mengoptimalkan pengelolaan pertanian. Aplikasi ini tidak hanya
+            membantu menghitung secara akurat jumlah buah jeruk kinkan yang
+            tumbuh di pohon, tetapi juga mampu memprediksi tingkat kematangan
+            buah, memberikan informasi yang berharga kepada petani dan pengelola
+            kebun jeruk.
+          </p>
+          <img src="img/check.svg" class="img-check" />
+          <dt>fruid counting</dt>
+          <img src="img/check.svg" class="img-check" />
+          <dt>Inspection Quality</dt>
+        </div>
+        <img src="img/pohon kinkan.png" style="height: 400px" />
+      </section>
+
+      <!-- untuk courses -->
+      <section id="aplikasi">
+        <img src="img/kinkan.png" style="height: 300px" />
+        <div class="kolom">
+          <h2>Akurasi deteksi buah yang sangat tinggi.</h2>
+          <p>
+            Sistem kami menggunakan kecerdasan buatan dan pembelajaran mesin
+            untuk mendeteksi buah yang terlihat, memperkirakan buah yang
+            tersembunyi pada pohon, serta mengintegrasikan berbagai sumber
+            informasi untuk memberi tahu anda mana buat kinkan dan mana yang
+            bukan buah kinkan.
+          </p>
+        </div>
+      </section>
+      <!-- untuk team -->
+      <section id="camera">
+        <div class="tengah">
+          <div class="kolom">
+            <h2>Camera</h2>
+            <p>
+              Klik start untuk menampilkan webcame, klik stop untuk menutup webcame, klik capture untuk memotret, klik delete untuk menghapus foto dan klik submit untuk mengidentifikasi foto.
+            </p>
+            </div>
+            <body>
+              <div id="video-container">
+                  <video id="webcam" autoplay playsinline></video>
+              </div>
+              <div>
+                  <button id="startButton">Start</button>
+                  <button id="stopButton" disabled>Stop</button>
+                  <button id="captureButton" disabled>Capture</button>
+              </div>
+              <div id="image-container" style="display: none;">
+                  <img id="capturedImage" alt="Captured Image">
+              </div>
+              <div>
+                  <button id="deleteButton" disabled>Delete</button>
+                  <button id="submitButton" disabled>Submit</button>
+              </div>
+              <script src="script.js"></script>
+          </body>
+        </div>
+      </section>
+      <!-- tabel counting -->
+      <section id="counting">
+        <div class="tengah">
+          <div class="kolom">
+            <h2>Tabel Counting</h2>
+            <img src="img/counting.png" style="height: 200px" />
+          </div>
+          <div class="kolom">
+            <h2>Tabel inspection orange</h2>
+            <img src="img/inspection.png" style="height: 400px" />
+          </div>
+        </div>
+      </section>
+      <!-- untuk team -->
+      <section id="anggota">
+        <div class="tengah">
+          <div class="kolom">
+            <h2>Our Team Projects AI</h2>
+            <p>
+              Studi Independent Bersertifikat Batch 5 Orbit Future Academy
+            </p>
+            <div class="team-list">
+              <div class="kartu-team">
+                <img
+                  src="img/syahrul.png"
+                />
+                <p>Syahrul Gunadin</p>
+              </div>
+          </div>
+
+          <div class="team-list">
+            <div class="kartu-team">
+              <img
+                src="img/inna.png"
+              />
+              <p>Inna Fatahna</p>
+            </div>
+            <div class="kartu-team">
+              <img
+                src="img/rala.png"
+              />
+              <p>Ralla Lembayung</p>
+            </div>
+            <div class="kartu-team">
+              <img
+                src="img/vioneta.png"
+              />
+              <p>Vioneta Zarazsofia</p>
+            </div>
+            <div class="kartu-team">
+              <img
+                src="img/yunisa.png"
+              />
+              <p>Yunisa Damayanti</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-content">
+            <span>&copy; Kelompok 6_ERSOY</span>
+        </div>
+    </footer>
+  </body>
+</html>
